@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Role;
 use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
-
+use Laratrust\Traits\LaratrustRoleTrait;
 class RegisterController extends Controller
 {
     /*
@@ -65,12 +66,14 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        $user= User::create([
             'name' => $data['name'],
             'first_surname' => $data['first_surname'],
             'second_surname' => $data['second_surname'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+        $user->attachRole('user');
+        return $user;
     }
 }

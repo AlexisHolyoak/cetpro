@@ -18,11 +18,13 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('css/footer.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/fontawesome.min.css') }}">
 </head>
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-laravel">
-            <div class="container">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'CETPRO Huacho') }}
                 </a>
@@ -75,6 +77,59 @@
         <main class="py-4">
             @yield('content')
         </main>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3>CETPRO HUACHO</h3>
+                        <p>Centro de Educación Técnico-Productiva "Huacho". Liderando la educación técnica en la región</p>
+
+                    </div>
+                    <div class="col-md-2 list">
+                        <ul>
+                            <li><a href="#">Inicio</a></li>
+                            <li><a href="#">Carreras</a></li>
+                            <li><a href="#">Notas</a></li>
+                            <li><a href="#">Asistencias</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="col-md-2 list">
+                        <!--
+                        <ul>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                        </ul>
+                        -->
+                    </div>
+                    <div class="col-md-2">
+
+                    </div>
+                    <div class="col-md">
+                        <h5><strong>Información de contacto</strong></h5>
+                        <p><strong>Dirección:</strong> Calle Ernesto Ausejo Pintado N° 497 Amay - Huacho - Lima - Perú <!-- Random Adress -->
+                        </p>
+                        <p><strong>Email:</strong> cetprohuacho@gmail.com</p>
+                        <p><strong>Tel.:</strong> 239-4169</p>
+                    </div>
+                </div>
+            </div>
+        <div class="container">
+    <div class="row">
+      <div class="col-md text-center">
+
+      © 2010-<?php echo date("Y");?>
+
+                </div>
+    </div>
+        </div>
+
+
+
+
+        </footer>
     </div>
 </body>
 </html>
