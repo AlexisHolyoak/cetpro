@@ -99,7 +99,7 @@ class StudentController extends Controller
             'phone_number'=>$request->phone_number,
             'cellphone_number'=>$request->cellphone_number,
             'meet_way'=>$request->meet_way,
-            'photo_path'=>Storage::disk('public')->putFile('avatars',new File($url))
+            'photo_path'=>Storage::disk('s3')->putFile('avatars',new File($url),'public')
         ]);
         $student->user->detachRole('user');
         $student->user->attachRole('student');
@@ -153,7 +153,7 @@ class StudentController extends Controller
         $student->meet_way=$request->meet_way;
         if(!empty($request->file('photo_path'))){
             $url=$request->file('photo_path')->getRealPath();
-            $student->photo_path=Storage::disk('public')->putFile('avatars',new File($url));
+            $student->photo_path=Storage::disk('s3')->putFile('avatars',new File($url),'public');
         }       
         $student->save();
         return redirect()->action('StudentController@show',['student'=>$student]);

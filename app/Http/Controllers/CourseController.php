@@ -49,7 +49,7 @@ class CourseController extends Controller
             'hours_quantity'=>$request->hours_quantity,
             'description'=>$request->description,
             'state'=>'DISPONIBLE',
-            'picture_path'=>Storage::disk('public')->putFile('courses',new File($url))
+            'picture_path'=>Storage::disk('s3')->putFile('courses',new File($url),'public')
         ]);
         return redirect()->action('CourseController@show',['course'=>$course]);
     }

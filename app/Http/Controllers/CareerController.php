@@ -44,7 +44,7 @@ class CareerController extends Controller
         $career=Career::create([
             'name'=>$request->name,
             'description'=>$request->description,
-            'picture_path'=>Storage::disk('public')->putFile('careers',new File($url))
+            'picture_path'=>Storage::disk('s3')->putFile('careers',new File($url),'public')
         ]);
         return redirect()->action('CareerController@index');
     }

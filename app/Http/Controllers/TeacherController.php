@@ -45,7 +45,7 @@ class TeacherController extends Controller
             ],[
             'phone_number'=>$request->phone_number,
             'cellphone_number'=>$request->cellphone_number,
-            'photo_path'=>Storage::disk('public')->putFile('teachers',new File($url))
+            'photo_path'=>Storage::disk('s3')->putFile('teachers',new File($url),'public')
             ]
         );
         return redirect()->action('TeacherController@show',['teacher'=>$teacher]);

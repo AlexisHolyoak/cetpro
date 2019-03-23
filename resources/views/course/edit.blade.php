@@ -15,7 +15,7 @@
                         @csrf
 
                         <div class="form-group row">
-                            <img id="output_photo" name="output_photo" src="{{ asset('storage/'.$course->picture_path) }}" alt="Imagen" class="card-img-top" width="400"
+                            <img id="output_photo" name="output_photo" src="{!! url('https://cloud-cube.s3.amazonaws.com/j370epmkvmys/'.$course->picture_path) !!}" alt="Imagen" class="card-img-top" width="400"
                                 height="350">
                         </div>                        
 

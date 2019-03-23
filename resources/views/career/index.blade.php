@@ -18,7 +18,7 @@
     <div class="row  justify-content-center">        
         @foreach ($careers as $career)
         <div class="card card-custom mx-2 mb-3">
-            <img src="{{asset('storage/'.$career->picture_path)}}" alt="{{ $career->name }}" class="career-image card-img-top">
+            <img src="{!! url('https://cloud-cube.s3.amazonaws.com/j370epmkvmys/'.$career->picture_path) !!}" alt="{{ $career->name }}" class="career-image card-img-top">
             <div class="card-body">
                 <h4 class="card-title">{{ $career->name }}</h4>
                 <p class="card-text" >{{ $career->description }}</p>                

@@ -51,17 +51,17 @@ return [
         'public' => [
             'driver' => 'local',
             'root' => public_path('storage'),
-            'url' => env('APP_URL').'/storage',
+            'url' => env('APP_URL').'/public',
             'visibility' => 'public',
         ],
 
         's3' => [
             'driver' => 's3',
-            'key' => env('AWS_ACCESS_KEY_ID'),
-            'secret' => env('AWS_SECRET_ACCESS_KEY'),
-            'region' => env('AWS_DEFAULT_REGION'),
-            'bucket' => env('AWS_BUCKET'),
-            'url' => env('AWS_URL'),
+            'key' => 'AKIAIFV6OIE6CJLZARUQ',
+            'secret' => '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',
+            'region' => 'us-east-1',
+            'bucket' => 'cloud-cube.s3',
+            'url' => 'https://cloud-cube.s3.amazonaws.com/j370epmkvmys',
         ],
 
     ],
