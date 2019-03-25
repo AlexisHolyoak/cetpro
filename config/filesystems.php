@@ -60,7 +60,7 @@ return [
             'key' => 'AKIAI6WQY5J47O5QBNAA',
             'secret' => '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',
             'region' => 'us-east-1',
-            'bucket' => 'cloud-cube.s3',
+            'bucket' => 'cloud-cube',
             'url' => 'https://cloud-cube.s3.amazonaws.com/ranbla920cxv',
         ],
 
