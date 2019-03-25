@@ -12,7 +12,7 @@
                         @csrf
                         <div class="form-group row">
                             <img name="output_photo" id="output_photo" alt="" class="rounded mx-auto d-block border border-primary"
-                                height="300" width="200" src="{!! url('https://cloud-cube.s3.amazonaws.com/j370epmkvmys/'.$teacher->photo_path) !!}">
+                                height="300" width="200" src="{!! url('https://cloud-cube.s3.amazonaws.com/ranbla920cxv/public/'.$teacher->photo_path) !!}">
                         </div>
                         <div class="form-group row">
                             <label for="photo_path" class="col-sm-4 col-form-label text-md-right">Foto*</label>

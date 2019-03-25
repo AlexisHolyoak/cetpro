@@ -8,7 +8,7 @@
 <div class="container">
     <div class="row">
         <div class="card mx-2 mb-3">
-            <img src="{{!! url('https://cloud-cube.s3.amazonaws.com/j370epmkvmys/'.$career->picture_path) !!}" alt="{{ $career->name }}" class="card-img-top" width="400"
+            <img src="{{!! url('https://cloud-cube.s3.amazonaws.com/ranbla920cxv/public/'.$career->picture_path) !!}" alt="{{ $career->name }}" class="card-img-top" width="400"
                 height="350">
             <div class="card-body">
 
@@ -26,7 +26,7 @@
                         data-target="#module-{{ $course->id }}Modal">
                         <div class="row">
                             <div class="col-md-2 text-center">
-                                <img src="{!! url('https://cloud-cube.s3.amazonaws.com/j370epmkvmys/'.$course->picture_path) !!}" class="rounded-circle" width="75"
+                                <img src="{!! url('https://cloud-cube.s3.amazonaws.com/ranbla920cxv/public/'.$course->picture_path) !!}" class="rounded-circle" width="75"
                                     height="75" alt="">
                             </div>
                             <div class="col-md-10">

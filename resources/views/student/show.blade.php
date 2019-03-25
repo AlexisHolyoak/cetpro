@@ -12,7 +12,7 @@
                     <form method="POST" files="true" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group row">
-                            <img src="{!! url('https://cloud-cube.s3.amazonaws.com/j370epmkvmys/'.$student->photo_path) !!}" name="output_photo" id="output_photo"
+                            <img src="{!! url('https://cloud-cube.s3.amazonaws.com/ranbla920cxv/public/'.$student->photo_path) !!}" name="output_photo" id="output_photo"
                                 alt="" class="rounded mx-auto d-block border border-primary" height="300" width="200">
                         </div>
                         <div class="form-group row">
