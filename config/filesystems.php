@@ -57,11 +57,11 @@ return [
 
         's3' => [
             'driver' => 's3',
-            'key' => 'AKIAIFV6OIE6CJLZARUQ',
-            'secret' => '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',
+            'key' => 'AKIAI6WQY5J47O5QBNAA',
+            'secret' => '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',
             'region' => 'us-east-1',
             'bucket' => 'cloud-cube.s3',
-            'url' => 'https://cloud-cube.s3.amazonaws.com/j370epmkvmys',
+            'url' => 'https://cloud-cube.s3.amazonaws.com/ranbla920cxv',
         ],
 
     ],
