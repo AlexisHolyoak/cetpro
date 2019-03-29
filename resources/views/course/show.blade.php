@@ -18,7 +18,7 @@
                 <div class="card-body">
 
                     <div class="form-group row">
-                        <img id="output_photo" name="output_photo" src="{!! url('https://cloud-cube.s3.amazonaws.com/ranbla920cxv/public/'.$course->picture_path) !!}"
+                        <img id="output_photo" name="output_photo" src="{!! url('https://cloud-cube.s3.amazonaws.com/'.$course->picture_path) !!}"
                             alt="Imagen" class="card-img-top" width="400" height="350">
                     </div>
 

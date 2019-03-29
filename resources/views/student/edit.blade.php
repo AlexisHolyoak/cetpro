@@ -12,7 +12,7 @@
                         <form action="{{ route('student.update',$student) }}"  method="POST" files="true" enctype="multipart/form-data">
                             @csrf
                             <div class="form-group row">
-                                <img  src="{!! url('https://cloud-cube.s3.amazonaws.com/ranbla920cxv/public/'.$student->photo_path) !!}" name="output_photo" id="output_photo" alt="" class="rounded mx-auto d-block border border-primary" height="300" width="200">
+                                <img  src="{!! url('https://cloud-cube.s3.amazonaws.com/'.$student->photo_path) !!}" name="output_photo" id="output_photo" alt="" class="rounded mx-auto d-block border border-primary" height="300" width="200">
                             </div>
                             <div class="form-group row">
                                 <label for="student_code" class="col-sm-4 col-form-label text-md-right">Código de estudiante*</label>

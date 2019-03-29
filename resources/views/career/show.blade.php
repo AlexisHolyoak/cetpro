@@ -8,7 +8,7 @@
 <div class="container">
     <div class="row">
         <div class="card mx-2 mb-3">
-            <img src="{{!! url('https://cloud-cube.s3.amazonaws.com/ranbla920cxv/public/'.$career->picture_path) !!}" alt="{{ $career->name }}" class="card-img-top" width="400"
+            <img src="{{!! url('https://cloud-cube.s3.amazonaws.com/'.$career->picture_path) !!}" alt="{{ $career->name }}" class="card-img-top" width="400"
                 height="350">
             <div class="card-body">
 
