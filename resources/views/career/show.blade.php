@@ -26,7 +26,7 @@
                         data-target="#module-{{ $course->id }}Modal">
                         <div class="row">
                             <div class="col-md-2 text-center">
-                                <img src="{!! url('https://cloud-cube.s3.amazonaws.com/ranbla920cxv/public/'.$course->picture_path) !!}" class="rounded-circle" width="75"
+                                <img src="{!! url('https://cloud-cube.s3.amazonaws.com/ranbla920cxv/'.$course->picture_path) !!}" class="rounded-circle" width="75"
                                     height="75" alt="">
                             </div>
                             <div class="col-md-10">
